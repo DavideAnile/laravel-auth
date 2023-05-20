@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 <table class="table table-striped">
     
     <h2 class="text-center m-5">Dettagli del progetto : {{$project->project_name}}</h2>
@@ -36,10 +38,11 @@
     </tbody>
   </table>
 
-  <div class="d-flex justify-content-center gap-3">
+    <div class="d-flex justify-content-center gap-3">
       <div><button class="btn btn-info" ><a href="{{route('admin.projects.edit' , $project->slug)}}">Modifica</a></button></div>
       <div><button class="btn btn-danger"><a href="">Elimina</a></button></div>
+      <div><button class="btn btn-warning"><a href="{{route('admin.projects.index')}}">Torna all'indice dei progetti</a></button></div>
+    </div>
 
-  </div>
 
 @endsection

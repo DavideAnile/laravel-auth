@@ -33,6 +33,8 @@
 
 </div>
 
+<div class="text-center"><button class="btn btn-success"><a href="{{route('admin.projects.create')}}">Aggiungi un progetto</a></button></div>
+
 
     
 @endsection

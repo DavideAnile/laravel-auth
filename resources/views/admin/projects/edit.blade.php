@@ -1,1 +1,7 @@
-sei nella edit
+@extends('layouts/admin')
+
+@section('content')
+
+
+    
+@endsection
