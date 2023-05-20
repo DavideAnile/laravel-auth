@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
-    use HasFactory;
+    protected $fillable = ['project_name' , 'project_description', 'github_link', 'created_by'];
 }
