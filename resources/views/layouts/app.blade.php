@@ -85,9 +85,14 @@
             </div>
         </nav>
 
-        <main class="container mt-4">
+        <main class="container guest">
+            
+            
             @yield('content')
+            
         </main>
+        @include('partials/footer')
+
     </div>
 </body>
 

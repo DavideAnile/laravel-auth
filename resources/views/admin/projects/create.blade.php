@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2> Inserisci un nuovo progetto !</h2>
+<h2 class="pt-3"> Inserisci un nuovo progetto !</h2>
 
 <form action="{{route('admin.projects.store')}}" method="POST">
 
@@ -28,7 +28,7 @@
             <input class="form-control" type="text" name="created_by" id="created_by" placeholder="Creato da :">
         </div>
 
-        <div class="text-center my-4"><button class="btn btn-primary" type="submit">Salva Progetto</button></div>
+        <div class="text-center p-4"><button class="btn btn-primary" type="submit">Salva Progetto</button></div>
 
 </form>
     

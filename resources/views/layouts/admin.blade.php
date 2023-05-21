@@ -28,11 +28,14 @@
 
         @include('partials/navbar')
 
-        <main class="container mt-4">
-            @yield('content')
-        </main>
+        <section class="admin ">
+            <main class="container my-container">
+                @yield('content')
+            </main>
 
-        @include('partials/footer')
+            @include('partials/footer')
+        </section>
+
     </div>
 </body>
 

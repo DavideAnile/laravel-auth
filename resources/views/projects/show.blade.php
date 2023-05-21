@@ -23,7 +23,7 @@
       <tr>
         
         <td><strong>Link Github :</strong></td>
-        <td> <a href="">{{$project->github_link}}</a></td>
+        <td> <a href="{{$project->github_link}}">{{$project->github_link}}</a></td>
       </tr>
 
       <tr>

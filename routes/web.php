@@ -19,7 +19,7 @@ use PHPUnit\Framework\MockObject\Rule\Parameters;
 |
 */
 
-    Route::resource('/projects', PageController::class)->parameters(['projects' => 'project:slug']);
+    Route::resource('/projects', PageController::class);
     Route::get('/' , [PageController::class, 'home']);
 
 

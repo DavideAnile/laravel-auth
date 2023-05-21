@@ -6,7 +6,7 @@
 
 <table class="table table-striped">
     
-    <h2 class="text-center m-5">Dettagli del progetto : {{$project->project_name}}</h2>
+    <h2 class="text-center p-4">Dettagli del progetto : {{$project->project_name}}</h2>
     <tbody>
       <tr>
        
@@ -23,7 +23,7 @@
       <tr>
         
         <td><strong>Link Github :</strong></td>
-        <td> <a href="">{{$project->github_link}}</a></td>
+        <td> <a href="{{$project->github_link}}">{{$project->github_link}}</a></td>
       </tr>
 
       <tr>
@@ -38,7 +38,7 @@
     </tbody>
   </table>
 
-    <div class="d-flex justify-content-center gap-3">
+    <div class="d-flex justify-content-center gap-3 p-4">
       <div><button class="btn btn-info" ><a href="{{route('admin.projects.edit' , $project->slug)}}" class="my-link">Modifica</a></button></div>
       <div><button class="btn btn-danger my-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Elimina</button></div>
       <div><button class="btn btn-warning"><a href="{{route('admin.projects.index')}}" class="my-link">Torna all'indice</a></button></div>
