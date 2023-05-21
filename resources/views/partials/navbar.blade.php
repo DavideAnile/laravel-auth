@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container-fluid px-5">
     <h1>Ciao   <small>{{ Auth::user()->name }}</small> ! </h1>
 
     

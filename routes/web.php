@@ -2,8 +2,11 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Guest\PageController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\Framework\MockObject\Rule\Parameters;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    Route::resource('/projects', PageController::class)->parameters(['projects' => 'project:slug']);
+    Route::get('/' , [PageController::class, 'home']);
+
 
 
 

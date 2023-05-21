@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <a href="{{route('admin.projects.index')}}">visualizza tutti i progetti</a>
+    <a href="{{route('admin.projects.index')}}" class="text-uppercase text-decoration-none">visualizza tutti i progetti come Amministratore</a>
     
 @endsection
