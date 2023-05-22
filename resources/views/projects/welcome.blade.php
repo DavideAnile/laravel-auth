@@ -24,7 +24,7 @@
         
         <td>{{$singleProject->project_name}}</td>
         <td>{{$singleProject->created_by}}</td>
-        <td><a href="{{route('projects.show', $singleProject->id)}}"><i class="fa-solid fa-link"></i></a></td>
+        <td><a href="{{route('projects.show', $singleProject->slug)}}"><i class="fa-solid fa-link"></i></a></td>
         
         
       </tr>
